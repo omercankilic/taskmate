@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  <title>Welcome to TaskMate</title>
+{% endblock title %}
+
+{% block content %}
+
+    <div class="container" >
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img width="350" border-radius="5px" height="270" src="{% static 'images/claudio-schwarz-purzlbaum-IGS9e0pAaJc-unsplash.jpg'%}" alt="Nature1" class="shadow rounded-lg">
+            </div>
+            <div class="col-lg-4">
+                <img width="350" height="270" src="{% static 'images/claudio-schwarz-purzlbaum-IGS9e0pAaJc-unsplash.jpg'%}" alt="Nature1" class="rounded-lg shadow">
+            </div>
+            <div class="col-lg-4">
+                <img width="350" height="270" src="{% static 'images/claudio-schwarz-purzlbaum-IGS9e0pAaJc-unsplash.jpg'%}" alt="Nature1" class="rounded-lg shadow">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-primary">Quick and easy to use, anytime,anywhere..!</p></center>
+                <center><p class="h2 mt-3">"Plan your life to maximize efficiency."</p></center>
+                <center><p class="h5 mt-2">Taskmate lets you keep track of your task in one place.</p></center>
+                <center><a href="{% url 'todolist' %}"><button type="button" class="mt-2 shadow btn btn-primary btn-lg">Let's Get Started</button></a> </center>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
